@@ -6,7 +6,7 @@ public class IntNumber {
 	public boolean isZero() {
 		return value == 0;
 	}
-	public IntNumber div(IntNumber that) throws DivByZeroRuntimeException {
+	public IntNumber div(IntNumber that) {
 		if (that.isZero())
 			throw new DivByZeroRuntimeException();
 
